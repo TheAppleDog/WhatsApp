@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#E8ECC6"
+    tools:ignore="HardcodedText"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your phone number"
+        android:textColor="#40A344"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="65dp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You will need to verify your phone number."
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_below="@+id/t1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="35dp"/>
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/baseline_phone_24"
+        android:hint="phone number"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:layout_below="@+id/t2"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="40dp"
+        tools:ignore="Autofill"
+        android:inputType="phone" />
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="365dp"
+        android:indeterminate="true"
+        android:indeterminateTint="#28A84D"
+        android:max="100"
+        android:progress="0"
+        android:visibility="gone"
+        tools:ignore="RtlSymmetry" />
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="NEXT"
+        android:textSize="20sp"
+        android:backgroundTint="#0C7028"
+        android:layout_below="@+id/et1"
+        android:layout_marginTop="390dp"
+        android:layout_marginStart="155dp"/>
+
+
+</RelativeLayout>

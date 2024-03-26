@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText"
+    tools:context=".SecondFragment">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/person"
+        android:layout_width="75dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/baseline_person_pin_24"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/add"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginStart="26dp"
+        android:src="@drawable/baseline_add_circle_24"/>
+    <TextView
+        android:id="@+id/t"
+        android:layout_width="320dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_below="@+id/ll"
+        android:layout_toEndOf="@id/person"
+        android:text="My Status"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="320dp"
+        android:layout_height="30dp"
+        android:textColor="#252525"
+        android:layout_below="@id/t"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/person"
+        android:text="Tap to add status update"
+        android:textSize="16sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/t2"
+        android:text="Viewed updates"
+        android:textColor="#252525"
+        android:textSize="18sp"
+        android:background="#B3B2B2"
+        android:paddingStart="20dp"
+        android:layout_marginTop="8dp"/>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="187dp"
+        android:layout_below="@+id/ll"
+        android:dividerHeight="0dp"
+        android:listSelector="#D6D1D1"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icon"
+        android:layout_width="75dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8.8dp"
+        android:layout_below="@+id/ll"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="320dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="8dp"
+        android:layout_below="@+id/ll"
+        android:layout_toEndOf="@id/icon"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="320dp"
+        android:layout_height="30dp"
+        android:textColor="#252525"
+        android:layout_below="@id/text"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/icon"
+        android:textSize="16sp"/>
+
+</RelativeLayout>

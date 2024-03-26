@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="HardcodedText"
+    tools:context=".FirstFragment">
+
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:ignore="UselessLeaf"
+        android:orientation="vertical" />
+      <ListView
+        android:id="@+id/l"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+       android:layout_below="@+id/ll"
+        android:dividerHeight="1.5dp"
+        android:listSelector="#D6D1D1"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icon"
+        android:layout_width="75dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8.8dp"
+        android:layout_below="@+id/ll"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="320dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="8dp"
+        android:layout_below="@+id/ll"
+        android:layout_toEndOf="@id/icon"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="320dp"
+        android:layout_height="30dp"
+        android:textColor="#252525"
+        android:layout_below="@id/text"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/icon"
+        android:textSize="16sp"/>
+
+</RelativeLayout>
