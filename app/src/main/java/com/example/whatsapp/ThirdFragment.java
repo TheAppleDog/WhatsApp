@@ -11,8 +11,8 @@ public class ThirdFragment extends Fragment {
     ListView friends;
     String[] FriendsList = {"Arpita", "Avni","Dhrumil","Harshit","Hiral","Jinal", "Mummy" ,"Riya","Sehnaaz","Tvisha"};
     String Status[]={"Busy...","Be a beauty be a kind","Urgent Calls Only","Just Chill...","Have a good day","Miracle about to happen","can't talk, whatsapp only","All iz well","STAY HUMBLE","Jai Mahakal"};
-    int profile[] = {R.drawable.ak,R.drawable.hl, R.drawable.tv, R.drawable.hu,
-            R.drawable.ds, R.drawable.sb, R.drawable.rs, R.drawable.jin,R.drawable.amma,R.drawable.am};
+    int profile[] = {R.drawable.ak,R.drawable.am, R.drawable.ds, R.drawable.hu,
+            R.drawable.hl, R.drawable.jin, R.drawable.amma, R.drawable.rs,R.drawable.sb,R.drawable.tv};
     public ThirdFragment(){
 
     }
